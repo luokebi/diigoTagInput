@@ -1,0 +1,33 @@
+<!doctype html> 
+<html> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>jquery tag input Demo</title>
+
+<link rel="stylesheet" type="text/css" href="css/jquery-diigo-tag.css">
+</head>
+<body>
+<p><i>1.Press space to create tag(use quote to create tag with two or more words)</i></p>
+<input type="text" id="tag">
+<input type="button" id="tag-btn" value="get all tags">
+<p><i>2.Press enter to create tag</i></p>
+<input type="text" id="tag2">
+<input type="button" id="tag2-btn" value="get all tags">
+<script type="text/javascript" src="lib/jquery-1.10.2.min.js"></script>
+<!-- <script type="text/javascript" src="src/jquery-tag.js"></script> -->
+<script type="text/javascript" src="dist/jquery-diigoTagInput.min.js"></script>
+<script type="text/javascript">
+$('#tag').diigoTagInput({spaceKey:true,enterKey:false});
+$('#tag2').diigoTagInput({enterKey:true,spaceKey:false});
+
+$('#tag-btn').on('click',function(){
+	console.log($('#tag').diigoTagInput('getAllTags'));
+});
+
+$('#tag2-btn').on('click',function(){
+	console.log($('#tag2').diigoTagInput('getAllTags'));
+});
+
+</script>
+</body>
+</html>

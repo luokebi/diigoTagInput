@@ -1,0 +1,22 @@
+{
+  "name": "jquery-diigoTagInput",
+  "description": "diigo tag input jquery plugin",
+  "version": "1.0.0",
+  "homepage": "luokebi.github.io",
+  "author": {
+    "name": "luo",
+    "email": "luokobe@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luokebi/diigoTagInput.git"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-qunit": "~0.1.1",
+    "grunt-contrib-concat": "~0.1.2",
+    "grunt-contrib-uglify": "~0.1.1",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-contrib-clean": "~0.4.0"
+  }
+}
